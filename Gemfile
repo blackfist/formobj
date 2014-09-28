@@ -46,3 +46,6 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'annotate'
+gem 'simple_form'
+gem 'twitter-bootstrap-rails'
