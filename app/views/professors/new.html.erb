@@ -1,2 +1,11 @@
-<h1>Professors#new</h1>
-<p>Find me in app/views/professors/new.html.erb</p>
+<%= simple_form_for @professor_form do |f| %>
+  <%= f.input :prof_name, label: 'Professor Name' %>
+  <%= f.input :prof_subject, label: 'Subject' %>
+  <%= f.input :uni_name, label: 'University Name' %>
+  <%= f.input :uni_city, label:'City' %>
+  <%= f.input :uni_state, label: 'State' %>
+  <%= f.input :paper_title, label: 'Paper title' %>
+  <%= f.input :paper_date, label:'Date' %>
+  <%= f.input :paper_publication, label: 'Name of publication' %>
+  <%= f.button :submit %>
+<% end %>

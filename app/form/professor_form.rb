@@ -1,5 +1,5 @@
 class ProfessorForm
-  include include ActiveModel::Model
+  include ActiveModel::Model
 
   attr_accessor :prof_name, :prof_subject,
     :uni_name, :uni_state, :uni_city, :paper_title, :paper_date,
@@ -16,6 +16,10 @@ class ProfessorForm
     else
       false
     end
+  end
+
+  def model_name
+    Professor.model_name
   end
 
   private

@@ -3,5 +3,6 @@ class ProfessorsController < ApplicationController
   end
 
   def new
+    @professor_form = ProfessorForm.new
   end
 end
