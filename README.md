@@ -1,9 +1,19 @@
-== Form Objects with multiple dynamic objects
+# Form Objects with multiple dynamic objects
 
 When you've got a reasonably complicated set of models and relationships sometimes
 it is easier to create a class just for the form and use logic in that class
 to create the objects. The question is how to dynamically create fields that
 will populate child objects.
+
+## What is this
+This is a minimal working example of using a form object in Rails 4 to build
+out some complicated associations in a single form. It works right now.
+
+## But
+I can't figure out how I would extend this so that a user could add more than
+one Paper object in the form. Obviously I need to use some javascript to add
+more fields, but how do I tell my controller that there will be more fields?
+How do I tell the form object class how to handle those fields?
 
 ## The Models
 In this example application we're going to make a list of professors that
