@@ -11,21 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140928130437) do
+ActiveRecord::Schema.define(version: 20140928143137) do
 
   create_table "papers", force: true do |t|
     t.string   "title"
     t.string   "publication"
     t.date     "date"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "professor_id"
   end
 
   create_table "professors", force: true do |t|
     t.string   "name"
     t.string   "subject"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.integer  "university_id"
   end
 
   create_table "universities", force: true do |t|
